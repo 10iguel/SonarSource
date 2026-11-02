@@ -38,7 +38,7 @@ class Main {
 
             System.out.println(reader1.getNewSentence());
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("Could not read file: " + e.getMessage());
         }
     }
 }
