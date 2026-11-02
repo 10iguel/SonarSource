@@ -23,7 +23,7 @@
         <sonar.exclusions>target/**/*</sonar.exclusions>
         <!-- We are not using source control, so SCM is disabled -->
         <sonar.scm.disabled>true</sonar.scm.disabled>
-        <!-- Configures code coverage analysis. We are using Jacoco -->
+        <!-- Configures code coverage analysis. We are using jacoco -->
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <!-- Tells Sonar which SonarCloud organization and project to send the analysis to -->

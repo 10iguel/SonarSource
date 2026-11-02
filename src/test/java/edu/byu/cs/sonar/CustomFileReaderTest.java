@@ -3,6 +3,8 @@ package edu.byu.cs.sonar;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.FileNotFoundException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CustomFileReaderTest {
@@ -15,17 +17,17 @@ class CustomFileReaderTest {
     }
 
     @Test
-    void testHowManyWordsInFile() {
+    void testHowManyWordsInFile() throws FileNotFoundException {
         assertEquals(4, sut.howManyWordsInFile(), "There should be 4 words in readMe1.txt");
     }
 
     @Test
-    void testReturnThatWord() {
+    void testReturnThatWord() throws FileNotFoundException {
         assertEquals("I", sut.returnThatWord(1), "The first word should be I in readMe1.txt");
     }
 
     @Test
-    void testFindNewWord() {
+    void testFindNewWord() throws FileNotFoundException {
         sut.findNewWord("C");
         assertEquals("Computer ", sut.getNewSentence(), "Computer should be found when C queried");
     }
