@@ -26,12 +26,16 @@
         <!-- Configures code coverage analysis. We are using Jacoco -->
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <!-- Tells Sonar which SonarCloud organization and project to send the analysis to -->
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.organization>10iguel</sonar.organization>
+        <sonar.projectKey>10iguel_SonarSource</sonar.projectKey>
 
         <!-- Dependency versions used below -->
-        <jacoco.version>0.8.6</jacoco.version>
+        <jacoco.version>0.8.12</jacoco.version>
         <surefire.version>3.0.0-M5</surefire.version>
         <junit.jupiter.version>5.6.2</junit.jupiter.version>
-        <sonar.maven.version>3.7.0.1746</sonar.maven.version>
+        <sonar.maven.version>5.1.0.4751</sonar.maven.version>
     </properties>
 
     <dependencies>
