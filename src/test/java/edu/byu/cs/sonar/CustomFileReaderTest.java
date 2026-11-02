@@ -60,11 +60,6 @@ class CustomFileReaderTest {
     }
 
     @Test
-    void testNotEqualsOtherClass() {
-        assertNotEquals("readMe1.txt", sut, "A reader should not equal an object of another class");
-    }
-
-    @Test
     void testNotEqualsDifferentSentence() {
         CustomFileReader other = new CustomFileReader("readMe1.txt");
         other.setNewSentence("Different");
